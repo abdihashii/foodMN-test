@@ -1,0 +1,112 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Matt's Bar",
+      "city": "mpls",
+      "price": "cheap"
+    },
+    {
+      "id": 2,
+      "name": "Casper & Runyon's Nook",
+      "city": "mpls",
+      "price": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Borough",
+      "city": "mpls",
+      "price": "pricey"
+    },
+    {
+      "id": 4,
+      "name": "Butcher and the Boar",
+      "city": "mpls",
+      "price": "expensive"
+    },
+    {
+      "id": 5,
+      "name": "The Capital Grille",
+      "city": "mpls",
+      "price": "pricey"
+    },
+    {
+      "id": 6,
+      "name": "Manny's Steakhouse",
+      "city": "mpls",
+      "price": "expensive"
+    },
+    {
+      "id": 7,
+      "name": "Pho 79",
+      "city": "mpls",
+      "price": "cheap"
+    },
+    {
+      "id": 8,
+      "name": "Rusty Taco",
+      "city": "mpls",
+      "price": "cheap"
+    },
+    {
+      "id": 9,
+      "name": "El Taco Riendo",
+      "city": "mpls",
+      "price": "cheap"
+    },
+    {
+      "id": 10,
+      "name": "Red Cow",
+      "city": "mpls",
+      "price": "medium"
+    },
+    {
+      "id": 11,
+      "name": "Al's Breakfast",
+      "city": "mpls",
+      "price": "cheap"
+    },
+    {
+      "id": 12,
+      "name": "Black: Coffee and Waffle Bar",
+      "city": "mpls",
+      "price": "medium"
+    },
+    {
+      "id": 13,
+      "name": "Heyday",
+      "city": "mpls",
+      "price": "pricey"
+    },
+    {
+      "id": 14,
+      "name": "Nico's Taco and Tequila Bar",
+      "city": "mpls",
+      "price": "medium"
+    },
+    {
+      "id": 15,
+      "name": "Pajarito",
+      "city": "stp",
+      "price": "medium"
+    },
+    {
+      "id": 16,
+      "name": "Revival",
+      "city": "stp",
+      "price": "medium"
+    },
+    {
+      "id": 17,
+      "name": "El Burrito Mercado",
+      "city": "stp",
+      "price": "cheap"
+    },
+    {
+      "id": 18,
+      "name": "Mickey's Diner",
+      "city": "stp",
+      "price": "cheap"
+    }
+  ]
+}

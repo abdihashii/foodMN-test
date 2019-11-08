@@ -1,12 +1,23 @@
 /* React Libraries */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
-// import { Table, TableHead, TableBody, TableCell, TableRow } from '@material-ui/core';
 
 /* Custom Components */
 import { Restaurant } from "./Restaurant";
 
-export const RestaurantList = ({ restaurants }) => {
+/* Initial values */
+const baseUrl = `http://localhost:3010/restaurants`;
+
+export const RestaurantList = () => {
+  const [restaurants, setRestaurants] = useState([]);
+
+  useEffect(() => {
+    fetch(baseUrl)
+      .then(res => res.json())
+      .then(data => setRestaurants(data))
+      .catch(err => console.log(err));
+  }, []);
+
   const showRestaurants = () => {
     return restaurants.map((currentRestaurant, i) => {
       return <Restaurant restaurant={currentRestaurant} key={i} />;
@@ -14,18 +25,7 @@ export const RestaurantList = ({ restaurants }) => {
   };
 
   return (
-    // <Table>
-    //   <TableHead>
-    //     <TableRow>
-    //       <TableCell>Name</TableCell>
-    //       <TableCell>City</TableCell>
-    //       <TableCell>Price</TableCell>
-    //     </TableRow>
-    //   </TableHead>
-    //   <TableBody>{showRestaurants()}</TableBody>
-    // </Table>
-
-    <Table bordered hover>
+    <Table className="restaurant-list-wrapper" bordered hover>
       <thead>
         <tr>
           <th>Name</th>

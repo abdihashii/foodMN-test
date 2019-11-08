@@ -35,7 +35,7 @@
   grid-column: 2;
 
   display: grid;
-  grid-template-rows: ;
+  /* grid-template-rows: ; */
 
   justify-items: center;
   padding: 1em;

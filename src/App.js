@@ -10,14 +10,18 @@ import "./styles/grid.css";
 import { Home } from "./components/Home";
 import { RestaurantList } from "./components/RestaurantList";
 import { About } from "./components/About";
+const logo = require("./foodMN.png");
 
 export const App = () => {
   return (
     <Router>
       <div className="container wrapper">
         <nav className="navbar navbar-expand-lg navbar-light bg-light nav-wrapper">
-          <Link to="/" className="navbar-brand headerText">
-            <h3>foodMN</h3>
+          <Link to="/" className="navbar-brand">
+            <div className="headerText">
+              {/* <h3>foodMN</h3> */}
+              <img alt="Home" src={logo}></img>
+            </div>
           </Link>
           <div className="collapse navbar-collapse link-wrapper">
             <ul className="navbar-nav mr-auto">

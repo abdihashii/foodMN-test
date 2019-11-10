@@ -32,7 +32,6 @@ export const Home = () => {
       <div>
         <RandomRestaurantForm
           setFilteredRestaurants={setFilteredRestaurants}
-          randomRestaurant={randomRestaurant}
           onSubmit={submitChoice}
         />
       </div>

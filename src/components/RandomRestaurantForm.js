@@ -12,20 +12,20 @@ const initialRestaurantState = {
   city: "",
   price: ""
 };
-const baseUrl = `http://localhost:3010/restaurants`;
+const baseUrl = `http://localhost:4000/restaurants`;
+// const baseUrl = `http://localhost:3010/restaurants`;
 
-export const RandomRestaurantForm = ({
-  setFilteredRestaurants = { setFilteredRestaurants },
-  randomRestaurant = { randomRestaurant },
-  onSubmit
-}) => {
+export const RandomRestaurantForm = ({ setFilteredRestaurants, onSubmit }) => {
   /* Hooks */
   const [inputRestaurantValues, changeForm] = useForm(initialRestaurantState);
   const [role, changeRole] = useRole();
 
+  // console.log(`inputRestaurantValues.city: ${inputRestaurantValues.city}`);
+  // console.log(`inputRestaurantValues.price: ${inputRestaurantValues.price}`);
+
   useEffect(() => {
     fetch(
-      `${baseUrl}?city=${inputRestaurantValues.city}&price=${inputRestaurantValues.price}`
+      `${baseUrl}/search?city=${inputRestaurantValues.city}&price=${inputRestaurantValues.price}`
     )
       .then(res => res.json())
       .then(data => {
@@ -39,6 +39,9 @@ export const RandomRestaurantForm = ({
     inputRestaurantValues.price,
     setFilteredRestaurants
   ]);
+
+  // console.table(filteredRestaurants);
+  // console.table(randomRestaurant);
 
   const btnClass = "btn btn-secondary";
 
